@@ -1,7 +1,7 @@
 {
-    "name": "ImgSrc-er",
+    "name": "__MSG_extName__",
     "version": "0.1.0",
-    "description": "Convert selected image link URL into an HTML <img> tag with src attribute on the clipboard.",
+    "description": "__MSG_extDescription__",
     "permissions": [
         "contextMenus",
         "clipboardWrite"
@@ -12,6 +12,12 @@
         ],
         "persistent": false
     },
-    "icons": {},
+    "default_locale": "en",
+    "icons": {
+        "16": "images/ImgSrc-er16.png",
+        "32": "images/ImgSrc-er32.png",
+        "48": "images/ImgSrc-er48.png",
+        "128": "images/ImgSrc-er128.png"
+    },
     "manifest_version": 2
 }

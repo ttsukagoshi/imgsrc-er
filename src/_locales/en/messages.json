@@ -1,0 +1,14 @@
+{
+    "extName": {
+        "message": "ImgSrc-er",
+        "description": "Name of this extension."
+    },
+    "extDescription": {
+        "message": "Convert selected image link URL into an HTML <img> tag with src attribute on the clipboard.",
+        "description": "Description of this extension used in manifest.json"
+    },
+    "contextMenuTitle": {
+        "message": "Convert to <img> tag and save on clipboard",
+        "description": "The message to display on the context menu."
+    }
+}
