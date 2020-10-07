@@ -1,0 +1,17 @@
+{
+    "name": "ImgSrc-er",
+    "version": "0.1.0",
+    "description": "Convert selected image link URL into an HTML <img> tag with src attribute on the clipboard.",
+    "permissions": [
+        "contextMenus",
+        "clipboardWrite"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "icons": {},
+    "manifest_version": 2
+}
