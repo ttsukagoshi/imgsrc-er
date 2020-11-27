@@ -4,7 +4,7 @@
         "description": "Name of this extension."
     },
     "extDescription": {
-        "message": "選択された画像（またはそのURL）をHTMLの<img src=～～>タグに変換してクリップボードにコピーする。",
+        "message": "選択した画像やそのURLを、HTMLの<img src=\"～～\" alt=\"\">タグに変換してクリップボードにコピーする拡張機能。画像、画像URL、またはテキストリンクが選択可能。",
         "description": "Description of this extension used in manifest.json"
     },
     "contextMenuTitle": {
