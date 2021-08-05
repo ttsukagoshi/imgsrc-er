@@ -10,7 +10,7 @@ This extension can be [installed via the Chrome Web Store](https://chrome.google
 
 ## How to Use
 When an image, e.g., `https://example.com/image.jpg`, is selected, right-click to get the context menu and select `Convert to <img> tag and save on clipboard`.  
-![Screenshot of the context menu](https://ttsukagoshi.github.io/scriptable-assets/assets/images/ImgSrc-er/screenshot_ImgSrc-er.jpg)
+![Screenshot of the context menu](https://www.scriptable-assets.page/assets/images/ImgSrc-er/screenshot_ImgSrc-er.jpg)
 
 The string
 ```html
