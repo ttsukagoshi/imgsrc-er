@@ -16,10 +16,10 @@ name: Lint Code Base
 #############################
 on:
   push:
-    # branches-ignore: [main]
+    branches-ignore: [main]
     # Remove the line above to run when pushing to master
   pull_request:
-    branches: [main]
+    branches: [main, release]
 
 ###############
 # Set the Job #
@@ -52,8 +52,9 @@ jobs:
         uses: docker://ghcr.io/github/super-linter:slim-v4 # See https://github.com/github/super-linter#images
         env:
           VALIDATE_ALL_CODEBASE: true
+          VALIDATE_HTML: true
           VALIDATE_JAVASCRIPT_ES: true
-          VALIDATE_JSON: true
-          # VALIDATE_MARKDOWN: true
+          LINTER_RULES_PATH: /
+          JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.yml
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
