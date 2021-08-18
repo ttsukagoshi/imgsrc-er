@@ -50,9 +50,8 @@ function convertToImgTag(info) {
     textArea.select();
     document.execCommand('copy');
     document.body.removeChild(textArea);
-  } catch (error) {
-    let message = `${error.message}\n\n▼詳細\n${error.stack}`;
-    alert(message);
+  } catch (e) {
+    console.error(e.stack);
   }
 }
 
