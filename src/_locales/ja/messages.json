@@ -1,14 +1,14 @@
 {
-    "extName": {
-        "message": "ImgSrc-er（イメージソーサー）",
-        "description": "Name of this extension."
-    },
-    "extDescription": {
-        "message": "選択した画像やそのURLを、HTMLの<img src=\"～～\" alt=\"\">タグに変換してクリップボードにコピーする拡張機能。画像、画像URL、またはテキストリンクが選択可能。",
-        "description": "Description of this extension used in manifest.json"
-    },
-    "contextMenuTitle": {
-        "message": "<img>タグに変換してクリップボードにコピー",
-        "description": "The message to display on the context menu."
-    }
+  "extName": {
+    "message": "ImgSrc-er（イメージソーサー）",
+    "description": "Name of this extension."
+  },
+  "extDescription": {
+    "message": "選択した画像やそのURLを、HTMLの<img src=\"～～\" alt=\"\">タグに変換してクリップボードにコピーする拡張機能。画像、画像URL、またはテキストリンクが選択可能。",
+    "description": "Description of this extension used in manifest.json"
+  },
+  "contextMenuTitle": {
+    "message": "<img>タグに変換してクリップボードにコピー",
+    "description": "The message to display on the context menu."
+  }
 }
