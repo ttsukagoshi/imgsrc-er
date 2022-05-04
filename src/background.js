@@ -23,19 +23,9 @@ chrome.runtime.onInstalled.addListener(function () {
   });
 });
 
-chrome.contextMenus.onClicked.addListener(function (info) {
+chrome.contextMenus.onClicked.addListener((info) => {
   if (info.menuItemId == 'ImgSrc-er') {
-    convertToImgTag(info);
-  }
-});
-
-/**
- * Convert the selected object into an HTML img tag and save the string on clipboard.
- * @param {Object} info Object containing the information on the right-clicked object.
- */
-function convertToImgTag(info) {
-  var taggedUrl = '';
-  try {
+    let taggedUrl = '';
     if (info.selectionText) {
       taggedUrl = imgTaggedUrl(info.selectionText);
     } else if (info.linkUrl) {
@@ -44,17 +34,14 @@ function convertToImgTag(info) {
       taggedUrl = imgTaggedUrl(info.srcUrl);
     }
     // Save to clipboard
-    let textArea = document.createElement('textarea');
-    document.body.appendChild(textArea);
-    textArea.value = taggedUrl;
-    textArea.select();
-    document.execCommand('copy');
-    document.body.removeChild(textArea);
-  } catch (error) {
-    let message = `${error.message}\n\n▼詳細\n${error.stack}`;
-    alert(message);
+    chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+      chrome.tabs.sendMessage(tabs[0].id, {
+        message: 'copyText',
+        textToCopy: taggedUrl,
+      });
+    });
   }
-}
+});
 
 /**
  * Encapsulate the entered URL string in an HTML img tag.
