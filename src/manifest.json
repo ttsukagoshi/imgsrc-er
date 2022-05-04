@@ -1,12 +1,17 @@
 {
   "name": "__MSG_extName__",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "__MSG_extDescription__",
   "permissions": ["contextMenus", "clipboardWrite"],
   "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+    "service_worker": "background.js"
   },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
   "default_locale": "en",
   "icons": {
     "16": "images/ImgSrc-er16.png",
@@ -14,5 +19,5 @@
     "48": "images/ImgSrc-er48.png",
     "128": "images/ImgSrc-er128.png"
   },
-  "manifest_version": 2
+  "manifest_version": 3
 }
