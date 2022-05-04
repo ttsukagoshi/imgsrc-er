@@ -14,12 +14,16 @@
 
 /* global chrome */
 
-chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.message === 'copyText') {
-    console.log(
-      `sender: ${JSON.stringify(sender)}, sendResponse: ${sendResponse}`
+    console.info(
+      `[ImgSrc-er] Copying text "${
+        request.textToCopy
+      }" to clipboard (sender: ${JSON.stringify(sender)})`
     );
     copyToTheClipboard(request.textToCopy);
+    sendResponse();
+    return;
   }
 });
 
