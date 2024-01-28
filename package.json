@@ -1,6 +1,6 @@
 {
   "name": "imgsrc-er",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Google Chrome extension to convert selected image link URL into an HTML <img> tag with src attribute on the clipboard.",
   "main": "background.js",
   "scripts": {
