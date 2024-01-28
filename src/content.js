@@ -19,7 +19,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     console.info(
       `[ImgSrc-er] Copying text "${
         request.textToCopy
-      }" to clipboard (sender: ${JSON.stringify(sender)})`
+      }" to clipboard (sender: ${JSON.stringify(sender)})`,
     );
     copyToTheClipboard(request.textToCopy);
     sendResponse();
