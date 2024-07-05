@@ -1,3 +1,5 @@
+name: 'Upload Zipped Source Code on Release'
+
 on:
   release:
     types:
