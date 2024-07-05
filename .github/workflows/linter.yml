@@ -5,14 +5,16 @@ on: # yamllint disable-line rule:truthy
   push: null
   pull_request: null
 
+permissions:
+  contents: read
+  packages: read
+
 jobs:
   build:
     name: Lint
     runs-on: ubuntu-latest
 
     permissions:
-      contents: read
-      packages: read
       # To report GitHub Actions status checks
       statuses: write
 
@@ -24,12 +26,14 @@ jobs:
           # list of files that changed across commits
           fetch-depth: 0
       - name: Super-linter
-        uses: super-linter/super-linter/slim@v5 # x-release-please-version
+        uses: super-linter/super-linter/slim@v6 # x-release-please-version
         env:
           DEFAULT_BRANCH: main
           JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.yml
           LINTER_RULES_PATH: /
           VALIDATE_ALL_CODEBASE: true
-          VALIDATE_JAVASCRIPT_ES: true
+          VALIDATE_JSON: false
+          VALIDATE_JAVASCRIPT_STANDARD: false
+          VALIDATE_NATURAL_LANGUAGE: false
           # To report GitHub Actions status checks
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

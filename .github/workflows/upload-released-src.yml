@@ -1,7 +1,11 @@
+name: 'Upload Zipped Source Code on Release'
+
 on:
   release:
     types:
       - created
+
+permissions: read-all
 
 jobs:
   build:
