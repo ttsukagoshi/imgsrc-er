@@ -1,6 +1,10 @@
 # ImgSrc-er (Google Chrome Extension)
 
-[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/mmalpdcdmbloijpgoagaeallfnmioika)](https://chrome.google.com/webstore/detail/imgsrc-er/mmalpdcdmbloijpgoagaeallfnmioika) [![GitHub Super-Linter](https://github.com/ttsukagoshi/imgsrc-er/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter) [![Total alerts](https://img.shields.io/lgtm/alerts/g/ttsukagoshi/imgsrc-er.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ttsukagoshi/imgsrc-er/alerts/)  
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/mmalpdcdmbloijpgoagaeallfnmioika)](https://chrome.google.com/webstore/detail/imgsrc-er/mmalpdcdmbloijpgoagaeallfnmioika)
+[![Accessibility-alt-text-bot](https://github.com/ttsukagoshi/imgsrc-er/actions/workflows/a11y-alt-text-bot.yml/badge.svg)](https://github.com/ttsukagoshi/imgsrc-er/actions/workflows/a11y-alt-text-bot.yml)
+[![CodeQL](https://github.com/ttsukagoshi/imgsrc-er/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/ttsukagoshi/imgsrc-er/actions/workflows/codeql-analysis.yml)
+[![Super-Linter](https://github.com/ttsukagoshi/imgsrc-er/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
+
 Convert image link URL into an `<img>` tag
 
 ## About
