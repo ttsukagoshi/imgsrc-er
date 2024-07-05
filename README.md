@@ -4,6 +4,7 @@
 [![Accessibility-alt-text-bot](https://github.com/ttsukagoshi/imgsrc-er/actions/workflows/a11y-alt-text-bot.yml/badge.svg)](https://github.com/ttsukagoshi/imgsrc-er/actions/workflows/a11y-alt-text-bot.yml)
 [![CodeQL](https://github.com/ttsukagoshi/imgsrc-er/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/ttsukagoshi/imgsrc-er/actions/workflows/codeql-analysis.yml)
 [![Super-Linter](https://github.com/ttsukagoshi/imgsrc-er/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
+[![Upload Zipped Source Code on Release](https://github.com/ttsukagoshi/imgsrc-er/actions/workflows/upload-released-src.yml/badge.svg)](https://github.com/ttsukagoshi/imgsrc-er/actions/workflows/upload-released-src.yml)
 
 Convert image link URL into an `<img>` tag
 
