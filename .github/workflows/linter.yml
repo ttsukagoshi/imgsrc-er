@@ -26,7 +26,7 @@ jobs:
           # list of files that changed across commits
           fetch-depth: 0
       - name: Super-linter
-        uses: super-linter/super-linter/slim@v6 # x-release-please-version
+        uses: super-linter/super-linter/slim@v7 # x-release-please-version
         env:
           DEFAULT_BRANCH: main
           JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.yml
